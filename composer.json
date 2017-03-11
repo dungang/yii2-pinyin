@@ -18,7 +18,7 @@
   },
   "autoload": {
     "psr-4": {
-      "dungang\\pinyin\\": ""
+      "dungang\\pinyin\\": "src"
     }
   }
 }
