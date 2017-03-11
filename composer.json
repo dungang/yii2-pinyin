@@ -1,0 +1,24 @@
+{
+  "name": "dungang/yii2-pinyin",
+  "description": "基于yii2 对overtrue/pinyin的封装",
+  "license": "MIT",
+  "minimum-stability": "dev",
+  "authors": [
+    {
+      "name": "dun gang",
+      "email": "dungang@126.com",
+      "homepage": "https://github.com/dungang",
+      "role": "Creator"
+    }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "overtrue/pinyin":"~3.0",
+    "yiisoft/yii2": "~2.0.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "dungang\\pinyin\\": ""
+    }
+  }
+}
