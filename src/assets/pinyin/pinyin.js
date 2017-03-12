@@ -13,14 +13,21 @@
                 opts.target = _target;
             }
             var target = $(opts.target);
-            _this.find(opts.btnSelector).click(function (e) {
-                e.preventDefault();
-                $.get(opts.url,{'chinese':target.val()},function (response) {
-                    if (response.success){
-                        _this.val(response.data);
-                    }
-                })
-            });
+            var btn = _this.parent().find(opts.btnSelector);
+            if (btn) {
+
+                btn.css({
+                    cursor:'pointer'
+                }).click(function (e) {
+                    e.preventDefault();
+                    $.get(opts.url,{'chinese':target.val()},function (response) {
+                        var rst = $.parseJSON(response);
+                        if (rst.success){
+                            _this.val(rst.data.join('-'));
+                        }
+                    })
+                });
+            }
         });
     };
 
