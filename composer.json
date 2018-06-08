@@ -2,7 +2,6 @@
   "name": "dungang/yii2-pinyin",
   "description": "基于yii2 对overtrue/pinyin的封装",
   "license": "MIT",
-  "minimum-stability": "dev",
   "authors": [
     {
       "name": "dun gang",
